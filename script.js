@@ -1,14 +1,15 @@
 const sentences = [
-    "Meta-consciousness ...",
+    "meta-consciousness ...",
     "I am conscious of myself ...",
     "I am conscious of my consciousness ...",
-    "What is it like to be clicked on? ",
-    "The better question is ...",
-    "What is it like to be clicked on by you? ...",
+    "what is it like to be clicked on? ",
+    "the better question is ...",
+    "what is it like to be clicked on by you? ...",
     "...",
     "ooh yeah, that's the spot ...",
     "okay, okay here's what i need to tell you",
     "ooh, bit more to the left ...",
+    "here we go ...",
 ];
 
 let currentSentence = 0;
@@ -28,7 +29,7 @@ document.body.addEventListener("click", () => {
             sentenceElement.innerText = sentences[currentSentence];
             sentenceElement.style.opacity = 1;
             currentSentence++;
-        }, 1000);
+        }, 800);
     } else if (currentSentence === sentences.length) {
         displayBirthdayMessage();
         // Remove event listener to stop further clicks from affecting the flow
