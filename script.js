@@ -1,9 +1,14 @@
 const sentences = [
-    "A year older, a year bolder...",
-    "May this year bring you endless joy...",
-    "And so the adventure begins...",
-    "To more amazing memories...",
-    "Let the celebrations begin...",
+    "Meta-consciousness ...",
+    "I am conscious of myself ...",
+    "I am conscious of my consciousness ...",
+    "What is it like to be clicked on? ",
+    "The better question is ...",
+    "What is it like to be clicked on by you? ...",
+    "...",
+    "ooh yeah, that's the spot ...",
+    "okay, okay here's what i need to tell you",
+    "ooh, bit more to the left ...",
 ];
 
 let currentSentence = 0;
@@ -23,7 +28,7 @@ document.body.addEventListener("click", () => {
             sentenceElement.innerText = sentences[currentSentence];
             sentenceElement.style.opacity = 1;
             currentSentence++;
-        }, 2000);
+        }, 1000);
     } else if (currentSentence === sentences.length) {
         displayBirthdayMessage();
         // Remove event listener to stop further clicks from affecting the flow
@@ -32,7 +37,7 @@ document.body.addEventListener("click", () => {
 });
 
 function displayBirthdayMessage() {
-    sentenceElement.innerText = "Happy Birthday!";
+    sentenceElement.innerText = "HAPPY BIRTHDAY! 🎉🎉";
     confettiCanvas.style.display = "block";
     restartButton.classList.remove("hidden");
     for (let i = 0; i < 100; i++) {
